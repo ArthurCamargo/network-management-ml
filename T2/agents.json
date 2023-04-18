@@ -1,0 +1,35 @@
+[
+    {
+        "user_owner": "123",
+        "agent_alias": "Hell",
+        "ip_addr": "127.0.0.1",
+        "sec_user": "MD5DESUser",
+        "community": "public",
+        "auth_protocol": "MD5",
+        "auth_password": "The Net-SNMP Demo Password",
+        "privacy_protocol": "DES",
+        "privacy_password": "The Net-SNMP Demo Password"
+    },
+    {
+        "user_owner": "diego",
+        "agent_alias": "Dlm-Vm1",
+        "ip_addr": "172.16.133.134",
+        "sec_user": "MD5DESUser",
+        "community": "Public",
+        "auth_protocol": "MD5",
+        "auth_password": "frango frito muito bom",
+        "privacy_protocol": "DES",
+        "privacy_password": "frango frito muito bom"
+    },
+    {
+        "user_owner": "123",
+        "agent_alias": "turman",
+        "ip_addr": "192.168.0.104",
+        "sec_user": "MD5DESUser",
+        "community": "public",
+        "auth_protocol": "MD5",
+        "auth_password": "The Net-SNMP Demo Password",
+        "privacy_protocol": "DES",
+        "privacy_password": "The Net-SNMP Demo Password"
+    }
+]
