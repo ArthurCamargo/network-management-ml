@@ -217,6 +217,9 @@ def createInfoLabels(tab_control, base, clfs):
 
         print([X.iloc[1]])
         ttk.Label(tab, text = "Decision Tree: "  +  str(clfs.dt.predict([X.iloc[1]]))).pack()
+        ttk.Label(tab, text = "Knn: "  +  str(clfs.knn.predict([X.iloc[1]]))).pack()
+        ttk.Label(tab, text = "Neural Network: "  +  str(clfs.nn.predict([X.iloc[1]]))).pack()
+        ttk.Label(tab, text = "Random Forest: "  +  str(clfs.rf.predict([X.iloc[1]]))).pack()
 
         base[index] = info
     root.after(5000, createInfoLabels, tab_control, base, clfs)

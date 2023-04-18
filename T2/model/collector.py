@@ -84,13 +84,13 @@ session = startSession('192.168.0.104', 'MD5DESUser', 'public', 'MD5', 'The Net-
 
 BANDWIDTH_DELAY_SECONDS = 5
 old_time = 0
-with open('results.csv', 'a') as csvfile:
+with open('tcp-flood.csv', 'a') as csvfile:
     resultswriter = csv.DictWriter(csvfile, delimiter=',', fieldnames=variables)
     resultswriter.writeheader()
 while(1):
     current_time = time.time()
     if((current_time - old_time) >= BANDWIDTH_DELAY_SECONDS):
-        with open('attack.csv', 'a') as csvfile:
+        with open('tcp-flood.csv', 'a') as csvfile:
             resultswriter = csv.DictWriter(csvfile, delimiter=',', fieldnames=variables)
             results = get_info(0, variables)
             resultswriter.writerow(dict(zip(variables, results)))

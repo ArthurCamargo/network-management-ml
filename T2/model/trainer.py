@@ -40,6 +40,8 @@ class Classifiers:
         self.y = self.df['results'].values[1:]
         print(self.X.shape)
         print(self.y.shape)
+        print(self.X)
+        print(self.y)
 
         self.rf.fit(self.X, self.y) # 75
         self.dt.fit(self.X, self.y) # melhor 80
